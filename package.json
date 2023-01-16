@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev comment": "서버 사용중 에러 발생시 dev에 --delay 2s 추가",
     "dev": "nodemon --exec babel-node server",
     "migrate": "npx prisma migrate dev",
     "studio": "npx prisma studio"
@@ -26,9 +27,12 @@
     "@graphql-tools/schema": "^9.0.12",
     "@prisma/client": "^4.8.1",
     "apollo-server": "^2.25.2",
+    "apollo-server-express": "^3.11.1",
     "bcrypt": "^5.1.0",
     "dotenv": "^16.0.3",
-    "jsonwebtoken": "^9.0.0"
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
